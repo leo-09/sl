@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0450044C20DDE24000D2472F /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450044B20DDE23F00D2472F /* Util.m */; };
+		665552D92022FAFE0039AB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 665552D82022FAFE0039AB45 /* AppDelegate.m */; };
+		665552DC2022FAFE0039AB45 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665552DB2022FAFE0039AB45 /* LoginViewController.m */; };
+		665552DF2022FAFE0039AB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665552DD2022FAFE0039AB45 /* Main.storyboard */; };
+		665552E12022FAFE0039AB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665552E02022FAFE0039AB45 /* Assets.xcassets */; };
+		665552E42022FAFE0039AB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665552E22022FAFE0039AB45 /* LaunchScreen.storyboard */; };
+		665552E72022FAFE0039AB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 665552E62022FAFE0039AB45 /* main.m */; };
+		66B1C4A2206C9367005D45B8 /* VideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B1C4A1206C9367005D45B8 /* VideoRecordViewController.m */; };
+		66C483392039C34A00626D78 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C483352039C34A00626D78 /* UIView+Toast.m */; };
+		66C4833A2039C34A00626D78 /* DC_AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C483382039C34A00626D78 /* DC_AlertManager.m */; };
+		66CEAFA620299637007965E0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CEAFA520299637007965E0 /* CameraViewController.m */; };
+		66CF30EB20882CE7002552C6 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CF30E620882CE6002552C6 /* NSString+Common.m */; };
+		66D108FF2031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D108F92031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		66D109002031CEAA004880E4 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D108FA2031CEAA004880E4 /* TPKeyboardAvoidingTableView.m */; };
+		66D109012031CEAA004880E4 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D108FB2031CEAA004880E4 /* TPKeyboardAvoidingScrollView.m */; };
+		66D109022031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D108FD2031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.m */; };
+		66D109092031E624004880E4 /* AccountLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D109082031E624004880E4 /* AccountLocalData.m */; };
+		66D1090C2031EA71004880E4 /* BaseNetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1090B2031EA71004880E4 /* BaseNetData.m */; };
+		66D1090F2031F590004880E4 /* QuitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1090E2031F590004880E4 /* QuitView.m */; };
+		66DD56A42043970500971EB8 /* CameraViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56A32043970500971EB8 /* CameraViewCell.m */; };
+		66DD56A72043A65D00971EB8 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56A62043A65D00971EB8 /* PushViewController.m */; };
+		66DD56AB2043B1A700971EB8 /* LiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56AA2043B1A700971EB8 /* LiveModel.m */; };
+		66DD56BD2043CD5A00971EB8 /* libEasyRTMP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56AF2043CD5900971EB8 /* libEasyRTMP.a */; };
+		66DD56BF2043CD5A00971EB8 /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56B92043CD5A00971EB8 /* AACEncoder.m */; };
+		66DD56C02043CD5A00971EB8 /* H264Packet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56BA2043CD5A00971EB8 /* H264Packet.m */; };
+		66DD56C12043CD5A00971EB8 /* H264HWEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56BB2043CD5A00971EB8 /* H264HWEncoder.m */; };
+		66DD56C22043CD5A00971EB8 /* CameraEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56BC2043CD5A00971EB8 /* CameraEncoder.m */; };
+		66DD56C42043CD7D00971EB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56C32043CD7D00971EB8 /* AVFoundation.framework */; };
+		66DD56C62043CD8700971EB8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56C52043CD8700971EB8 /* CoreTelephony.framework */; };
+		66DD56C82043CD9100971EB8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56C72043CD9100971EB8 /* CFNetwork.framework */; };
+		66DD56CA2043CD9900971EB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56C92043CD9900971EB8 /* AudioToolbox.framework */; };
+		66DD56CC2043CDA100971EB8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56CB2043CDA100971EB8 /* VideoToolbox.framework */; };
+		66DD56CE2043CDA900971EB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56CD2043CDA900971EB8 /* SystemConfiguration.framework */; };
+		66DD56D02043CDAF00971EB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56CF2043CDAF00971EB8 /* Foundation.framework */; };
+		66DD56D22043CDBA00971EB8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56D12043CDBA00971EB8 /* libicucore.tbd */; };
+		66DD56D42043CDC300971EB8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56D32043CDC300971EB8 /* libiconv.tbd */; };
+		66DD56D62043CDCA00971EB8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56D52043CDC900971EB8 /* libz.tbd */; };
+		66DD56D82043CDD000971EB8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56D72043CDD000971EB8 /* libc++.tbd */; };
+		66DD56DA2043CDD600971EB8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD56D92043CDD600971EB8 /* libbz2.tbd */; };
+		66DD56DD2043DA2700971EB8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56DC2043DA2700971EB8 /* SettingViewController.m */; };
+		66DD56E12043F0D600971EB8 /* RateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56E02043F0D600971EB8 /* RateViewController.m */; };
+		66DD56E42043F21200971EB8 /* ResolitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56E32043F21200971EB8 /* ResolitionViewController.m */; };
+		66DD56E72044197C00971EB8 /* NoLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56E62044197C00971EB8 /* NoLiveView.m */; };
+		66DD56EA204419FE00971EB8 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD56E9204419FE00971EB8 /* LiveViewController.m */; };
+		B89B40D51526D66A2B19EFBD /* libPods-SolaLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD58356FB24220C2BE164D87 /* libPods-SolaLive.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0450044A20DDE23F00D2472F /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = ../../../SolaLive2/SolaLive/ViewController/Util.h; sourceTree = "<group>"; };
+		0450044B20DDE23F00D2472F /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = ../../../SolaLive2/SolaLive/ViewController/Util.m; sourceTree = "<group>"; };
+		501A8ADC9F95D4F5F69C5822 /* Pods-PhoneLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneLive/Pods-PhoneLive.debug.xcconfig"; sourceTree = "<group>"; };
+		61890C6AF27CFFB171289FE4 /* Pods-SolaLive.ad hoc distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolaLive.ad hoc distribution.xcconfig"; path = "Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive.ad hoc distribution.xcconfig"; sourceTree = "<group>"; };
+		665552D42022FAFE0039AB45 /* SolaLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolaLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		665552D72022FAFE0039AB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		665552D82022FAFE0039AB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		665552DA2022FAFE0039AB45 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		665552DB2022FAFE0039AB45 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		665552DE2022FAFE0039AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		665552E02022FAFE0039AB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		665552E32022FAFE0039AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		665552E52022FAFE0039AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665552E62022FAFE0039AB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		665552F1202347820039AB45 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		66B1C4A0206C9367005D45B8 /* VideoRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRecordViewController.h; sourceTree = "<group>"; };
+		66B1C4A1206C9367005D45B8 /* VideoRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecordViewController.m; sourceTree = "<group>"; };
+		66C483352039C34A00626D78 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		66C483362039C34A00626D78 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		66C483372039C34A00626D78 /* DC_AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC_AlertManager.h; sourceTree = "<group>"; };
+		66C483382039C34A00626D78 /* DC_AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC_AlertManager.m; sourceTree = "<group>"; };
+		66CEAFA420299637007965E0 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		66CEAFA520299637007965E0 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		66CF30E520882CE6002552C6 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		66CF30E620882CE6002552C6 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		66D108F72031CEAA004880E4 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		66D108F82031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		66D108F92031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		66D108FA2031CEAA004880E4 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		66D108FB2031CEAA004880E4 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		66D108FC2031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		66D108FD2031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		66D108FE2031CEAA004880E4 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		66D109072031E624004880E4 /* AccountLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLocalData.h; sourceTree = "<group>"; };
+		66D109082031E624004880E4 /* AccountLocalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLocalData.m; sourceTree = "<group>"; };
+		66D1090A2031EA71004880E4 /* BaseNetData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetData.h; sourceTree = "<group>"; };
+		66D1090B2031EA71004880E4 /* BaseNetData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetData.m; sourceTree = "<group>"; };
+		66D1090D2031F590004880E4 /* QuitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuitView.h; sourceTree = "<group>"; };
+		66D1090E2031F590004880E4 /* QuitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuitView.m; sourceTree = "<group>"; };
+		66DD56A22043970500971EB8 /* CameraViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewCell.h; sourceTree = "<group>"; };
+		66DD56A32043970500971EB8 /* CameraViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewCell.m; sourceTree = "<group>"; };
+		66DD56A52043A65D00971EB8 /* PushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		66DD56A62043A65D00971EB8 /* PushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		66DD56A92043B1A700971EB8 /* LiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveModel.h; sourceTree = "<group>"; };
+		66DD56AA2043B1A700971EB8 /* LiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveModel.m; sourceTree = "<group>"; };
+		66DD56AD2043CD5900971EB8 /* EasyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTypes.h; sourceTree = "<group>"; };
+		66DD56AE2043CD5900971EB8 /* EasyRTMPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyRTMPAPI.h; sourceTree = "<group>"; };
+		66DD56AF2043CD5900971EB8 /* libEasyRTMP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEasyRTMP.a; sourceTree = "<group>"; };
+		66DD56B12043CD5A00971EB8 /* CameraEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraEncoder.h; sourceTree = "<group>"; };
+		66DD56B32043CD5A00971EB8 /* H264Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264Packet.h; sourceTree = "<group>"; };
+		66DD56B42043CD5A00971EB8 /* AACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		66DD56B52043CD5A00971EB8 /* H264HWEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264HWEncoder.h; sourceTree = "<group>"; };
+		66DD56B92043CD5A00971EB8 /* AACEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACEncoder.m; sourceTree = "<group>"; };
+		66DD56BA2043CD5A00971EB8 /* H264Packet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264Packet.m; sourceTree = "<group>"; };
+		66DD56BB2043CD5A00971EB8 /* H264HWEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264HWEncoder.m; sourceTree = "<group>"; };
+		66DD56BC2043CD5A00971EB8 /* CameraEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraEncoder.m; sourceTree = "<group>"; };
+		66DD56C32043CD7D00971EB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66DD56C52043CD8700971EB8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		66DD56C72043CD9100971EB8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		66DD56C92043CD9900971EB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		66DD56CB2043CDA100971EB8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		66DD56CD2043CDA900971EB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66DD56CF2043CDAF00971EB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66DD56D12043CDBA00971EB8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		66DD56D32043CDC300971EB8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		66DD56D52043CDC900971EB8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		66DD56D72043CDD000971EB8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		66DD56D92043CDD600971EB8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		66DD56DB2043DA2700971EB8 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		66DD56DC2043DA2700971EB8 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		66DD56DF2043F0D600971EB8 /* RateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateViewController.h; sourceTree = "<group>"; };
+		66DD56E02043F0D600971EB8 /* RateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateViewController.m; sourceTree = "<group>"; };
+		66DD56E22043F21200971EB8 /* ResolitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResolitionViewController.h; sourceTree = "<group>"; };
+		66DD56E32043F21200971EB8 /* ResolitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResolitionViewController.m; sourceTree = "<group>"; };
+		66DD56E52044197C00971EB8 /* NoLiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoLiveView.h; sourceTree = "<group>"; };
+		66DD56E62044197C00971EB8 /* NoLiveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoLiveView.m; sourceTree = "<group>"; };
+		66DD56E8204419FE00971EB8 /* LiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		66DD56E9204419FE00971EB8 /* LiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		AD58356FB24220C2BE164D87 /* libPods-SolaLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SolaLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32E6FF94D39A220BCE7497A /* libPods-PhoneLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhoneLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB6659FF98950B28085601C /* Pods-SolaLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolaLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive.debug.xcconfig"; sourceTree = "<group>"; };
+		E0ABDC79CA14DB717A2640AF /* Pods-PhoneLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneLive/Pods-PhoneLive.release.xcconfig"; sourceTree = "<group>"; };
+		FF2E24257C608AE6E5DAC671 /* Pods-SolaLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolaLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		665552D12022FAFE0039AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DD56DA2043CDD600971EB8 /* libbz2.tbd in Frameworks */,
+				66DD56D82043CDD000971EB8 /* libc++.tbd in Frameworks */,
+				66DD56D62043CDCA00971EB8 /* libz.tbd in Frameworks */,
+				66DD56D42043CDC300971EB8 /* libiconv.tbd in Frameworks */,
+				66DD56D22043CDBA00971EB8 /* libicucore.tbd in Frameworks */,
+				66DD56D02043CDAF00971EB8 /* Foundation.framework in Frameworks */,
+				66DD56CE2043CDA900971EB8 /* SystemConfiguration.framework in Frameworks */,
+				66DD56CC2043CDA100971EB8 /* VideoToolbox.framework in Frameworks */,
+				66DD56CA2043CD9900971EB8 /* AudioToolbox.framework in Frameworks */,
+				66DD56C82043CD9100971EB8 /* CFNetwork.framework in Frameworks */,
+				66DD56C62043CD8700971EB8 /* CoreTelephony.framework in Frameworks */,
+				66DD56C42043CD7D00971EB8 /* AVFoundation.framework in Frameworks */,
+				66DD56BD2043CD5A00971EB8 /* libEasyRTMP.a in Frameworks */,
+				B89B40D51526D66A2B19EFBD /* libPods-SolaLive.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C82E12081D86FBB39F17211 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56D92043CDD600971EB8 /* libbz2.tbd */,
+				66DD56D72043CDD000971EB8 /* libc++.tbd */,
+				66DD56D52043CDC900971EB8 /* libz.tbd */,
+				66DD56D32043CDC300971EB8 /* libiconv.tbd */,
+				66DD56D12043CDBA00971EB8 /* libicucore.tbd */,
+				66DD56CF2043CDAF00971EB8 /* Foundation.framework */,
+				66DD56CD2043CDA900971EB8 /* SystemConfiguration.framework */,
+				66DD56CB2043CDA100971EB8 /* VideoToolbox.framework */,
+				66DD56C92043CD9900971EB8 /* AudioToolbox.framework */,
+				66DD56C72043CD9100971EB8 /* CFNetwork.framework */,
+				66DD56C52043CD8700971EB8 /* CoreTelephony.framework */,
+				66DD56C32043CD7D00971EB8 /* AVFoundation.framework */,
+				C32E6FF94D39A220BCE7497A /* libPods-PhoneLive.a */,
+				AD58356FB24220C2BE164D87 /* libPods-SolaLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		665552CB2022FAFE0039AB45 = {
+			isa = PBXGroup;
+			children = (
+				665552D62022FAFE0039AB45 /* SolaLive */,
+				665552D52022FAFE0039AB45 /* Products */,
+				CB99EBC470BD2B50925D93E6 /* Pods */,
+				0C82E12081D86FBB39F17211 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		665552D52022FAFE0039AB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				665552D42022FAFE0039AB45 /* SolaLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		665552D62022FAFE0039AB45 /* SolaLive */ = {
+			isa = PBXGroup;
+			children = (
+				665552EF2022FBE30039AB45 /* Main */,
+				665552ED2022FBCC0039AB45 /* View */,
+				665552EE2022FBD10039AB45 /* ViewController */,
+				66DD56A82043B15900971EB8 /* Model */,
+				66D109062031E520004880E4 /* DataLayer */,
+				66DD56B02043CD5A00971EB8 /* Encoder */,
+				66D108F52031CE9C004880E4 /* Vendor */,
+				66DD56AC2043CD5900971EB8 /* EasyRTMPLib */,
+				665552F02022FC040039AB45 /* Resource */,
+			);
+			path = SolaLive;
+			sourceTree = "<group>";
+		};
+		665552ED2022FBCC0039AB45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				665552DD2022FAFE0039AB45 /* Main.storyboard */,
+				665552E22022FAFE0039AB45 /* LaunchScreen.storyboard */,
+				66D1090D2031F590004880E4 /* QuitView.h */,
+				66D1090E2031F590004880E4 /* QuitView.m */,
+				66DD56E52044197C00971EB8 /* NoLiveView.h */,
+				66DD56E62044197C00971EB8 /* NoLiveView.m */,
+				66DD56A22043970500971EB8 /* CameraViewCell.h */,
+				66DD56A32043970500971EB8 /* CameraViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		665552EE2022FBD10039AB45 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				665552DA2022FAFE0039AB45 /* LoginViewController.h */,
+				665552DB2022FAFE0039AB45 /* LoginViewController.m */,
+				66CEAFA420299637007965E0 /* CameraViewController.h */,
+				66CEAFA520299637007965E0 /* CameraViewController.m */,
+				66DD56A52043A65D00971EB8 /* PushViewController.h */,
+				66DD56A62043A65D00971EB8 /* PushViewController.m */,
+				66DD56E8204419FE00971EB8 /* LiveViewController.h */,
+				66DD56E9204419FE00971EB8 /* LiveViewController.m */,
+				66DD56DE2043F0C400971EB8 /* Setting */,
+				0450044A20DDE23F00D2472F /* Util.h */,
+				0450044B20DDE23F00D2472F /* Util.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		665552EF2022FBE30039AB45 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				665552D72022FAFE0039AB45 /* AppDelegate.h */,
+				665552D82022FAFE0039AB45 /* AppDelegate.m */,
+				665552F1202347820039AB45 /* PrefixHeader.pch */,
+				665552E52022FAFE0039AB45 /* Info.plist */,
+				665552E62022FAFE0039AB45 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		665552F02022FC040039AB45 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				665552E02022FAFE0039AB45 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		66C483342039C33800626D78 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				66C483372039C34A00626D78 /* DC_AlertManager.h */,
+				66C483382039C34A00626D78 /* DC_AlertManager.m */,
+				66C483362039C34A00626D78 /* UIView+Toast.h */,
+				66C483352039C34A00626D78 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		66CF30E120882A0D002552C6 /* lineSpace */ = {
+			isa = PBXGroup;
+			children = (
+				66CF30E520882CE6002552C6 /* NSString+Common.h */,
+				66CF30E620882CE6002552C6 /* NSString+Common.m */,
+			);
+			path = lineSpace;
+			sourceTree = "<group>";
+		};
+		66D108F52031CE9C004880E4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				66CF30E120882A0D002552C6 /* lineSpace */,
+				66C483342039C33800626D78 /* Toast */,
+				66D108F62031CEAA004880E4 /* TPKeyboardAvoiding */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		66D108F62031CEAA004880E4 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				66D108F72031CEAA004880E4 /* TPKeyboardAvoidingScrollView.h */,
+				66D108F82031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.h */,
+				66D108F92031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				66D108FA2031CEAA004880E4 /* TPKeyboardAvoidingTableView.m */,
+				66D108FB2031CEAA004880E4 /* TPKeyboardAvoidingScrollView.m */,
+				66D108FC2031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				66D108FD2031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.m */,
+				66D108FE2031CEAA004880E4 /* TPKeyboardAvoidingTableView.h */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		66D109062031E520004880E4 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				66D109072031E624004880E4 /* AccountLocalData.h */,
+				66D109082031E624004880E4 /* AccountLocalData.m */,
+				66D1090A2031EA71004880E4 /* BaseNetData.h */,
+				66D1090B2031EA71004880E4 /* BaseNetData.m */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		66DD56A82043B15900971EB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56A92043B1A700971EB8 /* LiveModel.h */,
+				66DD56AA2043B1A700971EB8 /* LiveModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66DD56AC2043CD5900971EB8 /* EasyRTMPLib */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56AD2043CD5900971EB8 /* EasyTypes.h */,
+				66DD56AE2043CD5900971EB8 /* EasyRTMPAPI.h */,
+				66DD56AF2043CD5900971EB8 /* libEasyRTMP.a */,
+			);
+			path = EasyRTMPLib;
+			sourceTree = "<group>";
+		};
+		66DD56B02043CD5A00971EB8 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56B12043CD5A00971EB8 /* CameraEncoder.h */,
+				66DD56BC2043CD5A00971EB8 /* CameraEncoder.m */,
+				66DD56B22043CD5A00971EB8 /* Codec */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		66DD56B22043CD5A00971EB8 /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56B42043CD5A00971EB8 /* AACEncoder.h */,
+				66DD56B92043CD5A00971EB8 /* AACEncoder.m */,
+				66DD56B52043CD5A00971EB8 /* H264HWEncoder.h */,
+				66DD56BB2043CD5A00971EB8 /* H264HWEncoder.m */,
+				66DD56B32043CD5A00971EB8 /* H264Packet.h */,
+				66DD56BA2043CD5A00971EB8 /* H264Packet.m */,
+			);
+			path = Codec;
+			sourceTree = "<group>";
+		};
+		66DD56DE2043F0C400971EB8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				66DD56DB2043DA2700971EB8 /* SettingViewController.h */,
+				66DD56DC2043DA2700971EB8 /* SettingViewController.m */,
+				66DD56DF2043F0D600971EB8 /* RateViewController.h */,
+				66DD56E02043F0D600971EB8 /* RateViewController.m */,
+				66DD56E22043F21200971EB8 /* ResolitionViewController.h */,
+				66DD56E32043F21200971EB8 /* ResolitionViewController.m */,
+				66B1C4A0206C9367005D45B8 /* VideoRecordViewController.h */,
+				66B1C4A1206C9367005D45B8 /* VideoRecordViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CB99EBC470BD2B50925D93E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				501A8ADC9F95D4F5F69C5822 /* Pods-PhoneLive.debug.xcconfig */,
+				E0ABDC79CA14DB717A2640AF /* Pods-PhoneLive.release.xcconfig */,
+				CFB6659FF98950B28085601C /* Pods-SolaLive.debug.xcconfig */,
+				FF2E24257C608AE6E5DAC671 /* Pods-SolaLive.release.xcconfig */,
+				61890C6AF27CFFB171289FE4 /* Pods-SolaLive.ad hoc distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		665552D32022FAFE0039AB45 /* SolaLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665552EA2022FAFE0039AB45 /* Build configuration list for PBXNativeTarget "SolaLive" */;
+			buildPhases = (
+				7270DE1C232512AC2950D8C7 /* [CP] Check Pods Manifest.lock */,
+				665552D02022FAFE0039AB45 /* Sources */,
+				665552D12022FAFE0039AB45 /* Frameworks */,
+				665552D22022FAFE0039AB45 /* Resources */,
+				577C61E2B1B503531FC09AF5 /* [CP] Embed Pods Frameworks */,
+				C4FCA17DDFB00B3FC3845C30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolaLive;
+			productName = PhoneLive;
+			productReference = 665552D42022FAFE0039AB45 /* SolaLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		665552CC2022FAFE0039AB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = easydarwin;
+				TargetAttributes = {
+					665552D32022FAFE0039AB45 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 665552CF2022FAFE0039AB45 /* Build configuration list for PBXProject "SolaLive" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 665552CB2022FAFE0039AB45;
+			productRefGroup = 665552D52022FAFE0039AB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				665552D32022FAFE0039AB45 /* SolaLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		665552D22022FAFE0039AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665552E42022FAFE0039AB45 /* LaunchScreen.storyboard in Resources */,
+				665552E12022FAFE0039AB45 /* Assets.xcassets in Resources */,
+				665552DF2022FAFE0039AB45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		577C61E2B1B503531FC09AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7270DE1C232512AC2950D8C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolaLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FCA17DDFB00B3FC3845C30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SolaLive/Pods-SolaLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		665552D02022FAFE0039AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DD56EA204419FE00971EB8 /* LiveViewController.m in Sources */,
+				66C483392039C34A00626D78 /* UIView+Toast.m in Sources */,
+				66DD56E12043F0D600971EB8 /* RateViewController.m in Sources */,
+				66D109012031CEAA004880E4 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				665552DC2022FAFE0039AB45 /* LoginViewController.m in Sources */,
+				66DD56BF2043CD5A00971EB8 /* AACEncoder.m in Sources */,
+				66D1090F2031F590004880E4 /* QuitView.m in Sources */,
+				66D109022031CEAA004880E4 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				66CEAFA620299637007965E0 /* CameraViewController.m in Sources */,
+				66DD56E72044197C00971EB8 /* NoLiveView.m in Sources */,
+				66D1090C2031EA71004880E4 /* BaseNetData.m in Sources */,
+				66DD56DD2043DA2700971EB8 /* SettingViewController.m in Sources */,
+				66DD56C12043CD5A00971EB8 /* H264HWEncoder.m in Sources */,
+				66B1C4A2206C9367005D45B8 /* VideoRecordViewController.m in Sources */,
+				66DD56E42043F21200971EB8 /* ResolitionViewController.m in Sources */,
+				66DD56AB2043B1A700971EB8 /* LiveModel.m in Sources */,
+				66DD56C02043CD5A00971EB8 /* H264Packet.m in Sources */,
+				66DD56A42043970500971EB8 /* CameraViewCell.m in Sources */,
+				66DD56C22043CD5A00971EB8 /* CameraEncoder.m in Sources */,
+				0450044C20DDE24000D2472F /* Util.m in Sources */,
+				66D109092031E624004880E4 /* AccountLocalData.m in Sources */,
+				66C4833A2039C34A00626D78 /* DC_AlertManager.m in Sources */,
+				665552E72022FAFE0039AB45 /* main.m in Sources */,
+				66DD56A72043A65D00971EB8 /* PushViewController.m in Sources */,
+				66D109002031CEAA004880E4 /* TPKeyboardAvoidingTableView.m in Sources */,
+				665552D92022FAFE0039AB45 /* AppDelegate.m in Sources */,
+				66CF30EB20882CE7002552C6 /* NSString+Common.m in Sources */,
+				66D108FF2031CEAA004880E4 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		665552DD2022FAFE0039AB45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665552DE2022FAFE0039AB45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		665552E22022FAFE0039AB45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665552E32022FAFE0039AB45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		664FAB4C206258C300A2C767 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "ad hoc distribution";
+		};
+		664FAB4D206258C300A2C767 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61890C6AF27CFFB171289FE4 /* Pods-SolaLive.ad hoc distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xin sun (33USAS7KQX)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33USAS7KQX;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/SolaLive/Main/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SolaLive/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SolaLive/EasyRTMPLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.easydarwin.SolaLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "ad hoc distribution";
+		};
+		665552E82022FAFE0039AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		665552E92022FAFE0039AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		665552EB2022FAFE0039AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB6659FF98950B28085601C /* Pods-SolaLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33USAS7KQX;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/SolaLive/Main/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SolaLive/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SolaLive/EasyRTMPLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.easydarwin.SolaLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		665552EC2022FAFE0039AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2E24257C608AE6E5DAC671 /* Pods-SolaLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33USAS7KQX;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/SolaLive/Main/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SolaLive/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SolaLive/EasyRTMPLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.easydarwin.SolaLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		665552CF2022FAFE0039AB45 /* Build configuration list for PBXProject "SolaLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665552E82022FAFE0039AB45 /* Debug */,
+				665552E92022FAFE0039AB45 /* Release */,
+				664FAB4C206258C300A2C767 /* ad hoc distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		665552EA2022FAFE0039AB45 /* Build configuration list for PBXNativeTarget "SolaLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665552EB2022FAFE0039AB45 /* Debug */,
+				665552EC2022FAFE0039AB45 /* Release */,
+				664FAB4D206258C300A2C767 /* ad hoc distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 665552CC2022FAFE0039AB45 /* Project object */;
+}

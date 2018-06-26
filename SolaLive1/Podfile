@@ -1,0 +1,10 @@
+platform:ios ,’8.0’
+target ‘SolaLive’ do
+pod 'Masonry'
+#pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'IQKeyboardManager'
+pod 'MJExtension'
+
+end
